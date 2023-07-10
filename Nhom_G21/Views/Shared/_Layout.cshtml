@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nhom_G21</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Nhom_G21.styles.css" asp-append-version="true" />
+    <link href="~/path/to/your/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Nhom_G21</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </di>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="container border-top  mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>About</h3>
+                    <p>
+                        Mong các bạn có trải nghiệm tốt về website của tôi, nếu có gì chưa được
+                        tốt mong các bạn góp ý để website được hoàn thiện hơn
+                    </p>
+                </div>
+                <div class="col-md-3 col-6 text-float-right">
+                    <h3>as</h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-heart"></i></span>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                        <span><i class="bi bi-suit-heart"></i></i></span><a href="/about">About</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="/product">Product</a>
+                        </li>
+
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="#">Tư vấn</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="#">Chăm sóc khách hàng</a>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="#">Phản hồi</a>
+                        </li>
+
+                        <li>
+                            <span><i class="fa fa-heart"></i></span><a href="#">Báo lỗi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-6 ">
+                    <h3>Have a Questions?</h3>
+                    <address>
+                        <div>
+                            <p>
+                                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                Ha Noi, VietNam
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <a href="tel:+84964698674"> +84 964698674 </a>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p>
+                                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                <a href="mailto:lthien575@gmail.com">
+                                lthien575@gmail.com
+                                </a>
+                            </p>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class=" col-12 text-center py-4">
+                    <a href="https://www.instagram.com/lthien575/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100007529283089" target="_blank">
+
+                    <i class="fa fa-facebook-official m-1 p-2" aria-hidden="true"></i>
+
+                    </a>
+
+                    <a href="https://mail.google.com/mail" target="_blank">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="row text-center">
+                    <p>
+                        For all the lover | From clothing with love
+                    </p>
+                </div>
+            </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
